@@ -92,6 +92,8 @@ async function checkBirthdays() {
   }
 }
 
+
+
 // Schedule daily check at 8:00 AM (Nigeria time)
 cron.schedule('0 8 * * *', checkBirthdays, { timezone: "Africa/Lagos" });
 
